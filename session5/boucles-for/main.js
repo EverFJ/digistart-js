@@ -77,6 +77,7 @@ for (var i = 0; i < prenoms.length; i++) {
         break;
     }
 }
+// le mot-clé break permet de sortir instantanément d'une boucle.
 
 
 // TODO: ÉTAPE 8
@@ -93,9 +94,42 @@ var b = [3, 76, 1002, 31, 9, 340, 420, 90, -12, 1];
 // et pour chaque indice, placer la valeur la plus petite dans un
 // nouveau tableau.
 
+var solution = [];
+// On crée un tableaux vide pour la solution
+
+for (var i = 0; i < a.length; i++) {
+    // On parcourt le tableau avec une boucle for
+
+
+    if (a[i] < b[i]) {
+        // Si le nombre du tableau a est plus petit on le met (push) dans la solution
+        solution.push(a[i])
+
+    } else {
+        // Sinon on met le nombre du tableau b
+        solution.push(b[i])
+
+    }
+}
+console.log(solution)
+
+
 // TODO: ÉTAPE 10
 // Avec une autre boucle for, additionner les valeurs de `a` ayant un
 // indice pair avec les valeurs de `b` ayant l'indice impair suivant.
 // Placer ces résultats d'addition dans un nouveau tableau à afficher
 // dans la console.
 // Par exemple: a[0] + b[1], a[2] + b[3], etc.
+
+var tableau = []
+
+for (var i = 0; i < a.length; i++) {
+    if (a[i] % 2 === 0) {
+        // Si le nombre du tableau a est pair, on l'additionne au nombre suivant du tableau b 
+        var somme = a[i] + b[i + 1];
+
+        // On place le résultat dans le tableau
+        tableau.push(somme)
+    }
+}
+console.log(tableau)
