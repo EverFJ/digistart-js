@@ -1,6 +1,6 @@
-# Correction des exercices digistart JS
+# Correction des exercices digistart JS (à partir de la session 4 pour l'instant)
 
-## Cours sur openClassrooms (très bien fait)
+### Cours sur openClassrooms (très bien fait) :
 
 [MOOC sur le javascript pour réviser](https://openclassrooms.com/fr/courses/6175841-apprenez-a-programmer-avec-javascript)
 
