@@ -63,9 +63,21 @@ var prenoms = ['Ali', 'Nour', 'Jean', 'Carole', 'Ibrahim', 'Alma'];
 // qui saluent chaque prénom contenus dans le tableau `prenoms`.
 // Par exemple : "Bonjour Joseph".
 
+for (var i = 0; i < prenoms.length; i++) {
+    console.log("Bonjour " + prenoms[i])
+}
+
 // TODO: ÉTAPE 7
 // Avec une autre boucle for, afficher dans la console uniquement
 // le premier prénom contenant plus de 4 lettres.
+
+for (var i = 0; i < prenoms.length; i++) {
+    if (prenoms[i].length > 4) {
+        console.log(prenoms[i]);
+        break;
+    }
+}
+
 
 // TODO: ÉTAPE 8
 // Avec une autre boucle for, construire une nouvelle chaîne de
