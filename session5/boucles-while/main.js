@@ -6,16 +6,38 @@ console.log('Vous êtes dans les exercices sur les boucles while');
 // À l'aide d'une boucle while, afficher dans la console les nombres
 // de 1 à 10 compris.
 
+var i = 1
+while (i <= 10) {
+    console.log("Etape 1 :" + i);
+    i++;
+}
+
 // TODO: ÉTAPE 2
 // Avec une autre boucle while, afficher les mêmes nombres dans la
 // console, mais dans l'ordre inverse.
 
+var i = 10;
+while (i > 0) {
+    console.log("Etape 2 :" + i);
+    i--;
+}
+
 var nombres = [45, 2, 89, 12, 44, 29, 11, 3];
+
+
 
 // TODO: ÉTAPE 3
 // À l'aide d'une boucle while, afficher les valeurs du tableau `nombres`
 // dans la console jusqu'à la valeur égale à 29.
 
+var i = 0;
+while (i < nombres.length) {
+    console.log("Etape 3 :" + nombres[i])
+    if (nombres[i] === 29) {
+        break
+    }
+    i++
+}
 // TODO: ÉTAPE 4
 // Avec une autre boucle while, afficher les valeurs du tableau `nombres`
 // tant qu'elles sont inférieures à 50.
@@ -29,6 +51,22 @@ var prenoms = ['Ali', 'Nora', 'Jean', 'Carole', 'Ibrahim', 'Joseph'];
 // TODO: ÉTAPE 6
 // Avec une autre boucle while, afficher les valeurs du tableau `prenoms`
 // tant qu'elles contiennent la lettre "a" ou "A".
+
+var i = 0;
+while (i < prenoms.length) {
+    if (prenoms[i].includes("a") || prenoms[i].includes("A")) {
+        console.log("Etape 6 " + prenoms[i])
+    }
+    i++
+}
+// Autre solution : 
+i = 0;
+while (i < prenoms.length) {
+    if (prenoms[i].toLowerCase().includes("a")) {
+        console.log("Etape 6 " + prenoms[i])
+    }
+    i++
+}
 
 // TODO: ÉTAPE 7
 // Avec une autre boucle while, utiliser la méthode pop() sur le tableau
