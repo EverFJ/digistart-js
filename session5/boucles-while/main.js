@@ -42,11 +42,26 @@ while (i < nombres.length) {
 // Avec une autre boucle while, afficher les valeurs du tableau `nombres`
 // tant qu'elles sont inférieures à 50.
 
+i = 0;
+while (i < nombres.length) {
+    if (nombres[i] < 50) {
+        console.log("Etape 4 : " + nombres[i])
+    }
+    i++
+}
+
 var prenoms = ['Ali', 'Nora', 'Jean', 'Carole', 'Ibrahim', 'Joseph'];
 
 // TODO: ÉTAPE 5
 // À l'aide d'une boucle while, afficher les valeurs du tableau `prenoms`
 // tant que leur longueur ne dépasse pas 5 caractères.
+var i = 0
+while (i < prenoms.length) {
+    if (prenoms[i].length <= 5) {
+        console.log("Etape 5 : " + prenoms[i])
+    }
+    i++
+}
 
 // TODO: ÉTAPE 6
 // Avec une autre boucle while, afficher les valeurs du tableau `prenoms`
@@ -60,6 +75,7 @@ while (i < prenoms.length) {
     i++
 }
 // Autre solution : 
+
 i = 0;
 while (i < prenoms.length) {
     if (prenoms[i].toLowerCase().includes("a")) {
@@ -74,6 +90,23 @@ while (i < prenoms.length) {
 // console tant que le tableau n'est pas vide.
 // Documentation de la méthode Array.prototype.pop() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Array/pop
 
+
+// Solution 1
+
+i = prenoms.length - 1;
+while (i >= 0) {
+    console.log("Etape 7 Solution 1 : " + prenoms[i])
+    prenoms.pop()
+    i--
+}
+
+prenoms = ['Ali', 'Nora', 'Jean', 'Carole', 'Ibrahim', 'Joseph'];
+
+// Solution 2
+while (prenoms.length !== 0) {
+    console.log("Etape 7 Solution 2 : " + prenoms.pop())
+}
+
 // TODO: ÉTAPE 8
 // À l'aide d'une boucle while, afficher le résultat de la fonction
 // Date.now() dans la console tant qu'une variable aléatoire est inférieure
@@ -81,3 +114,11 @@ while (i < prenoms.length) {
 // aléatoire à chaque itération de la boucle.
 // Documentation de la fonction Date.now() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Date/now
 // Documentation de la fonction Math.random() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Math/random
+
+var random = Math.random() * 60;
+
+while (random < 50) {
+    console.log("Etape 8 : " + Date.now())
+    random = Math.random() * 60
+
+}

@@ -1,6 +1,5 @@
 // ------ TODO 1 ------ 
 /* Exercice avancé : Change la couleur de fond du body */
-
 // Cette fonction est executée à chaque fois que l'utilisateur va changer
 // la valeur de l'élément "select" dans le HTML, c'est à dire, à chaque fois
 // qu'il va "changer" d'option... c'est pourquoi elle est liée à l'événement onChange
@@ -23,6 +22,17 @@ function selectChange() {
 
   /* MON CODE EN DESSOUS */
 
+  if (color === "vert"){
+    document.body.style.backgroundColor = "green";
+  }
+  if (color === "bleu"){
+    document.body.style.backgroundColor = "blue";
+  }
+  if (color === "rouge"){
+    document.body.style.backgroundColor = "red";
+  }
+  
+  
   /* MON CODE AU DESSUS */
 
 };
